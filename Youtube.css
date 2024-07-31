@@ -1,0 +1,174 @@
+.no-style {
+  color: black; /* Set text color to black */
+  text-decoration: none; /* Remove the underline */
+}
+
+
+.video-time{
+  position: absolute;
+  background-color:rgba(0,0,0,0.6);
+  color:white;
+  font-family: Roboto,Arial;
+  font-size: 15px;
+  padding:4px 2px 4px 2px;
+  border-radius: 2px;
+  bottom: 1.1em;
+  right: 0.5em;
+}
+
+.notification-count{
+position:absolute;
+top: 3px;
+right: -4px;
+background-color: rgb(184, 2, 2);
+color: white;
+padding: 2px 6px 2px 6px;
+font-size: 14px;
+border-radius: 20px;
+font-family: Roboto,Arial;
+font-weight: 500;
+}
+
+.bell{
+  height: 23px;
+  margin-top: 6px;
+}
+
+.picture{
+display:flex;
+position: relative;
+
+}
+
+.thumbnail{
+  width: 100%;
+    cursor: pointer;
+    object-fit:cover;
+    object-position:center;
+    margin-bottom: 8px;
+}
+
+.info{
+display: grid ;
+grid-template-columns: 60px 1fr;
+}
+
+.title{
+  font-weight: 600;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.state{
+    margin-bottom: 6px;
+    color:rgb(96, 96, 96);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.stats{
+  color:rgb(96, 96, 96);
+font-size: 15px;
+}
+
+.profile-pic{
+  position: relative;
+  width: 50px;
+  border-radius:50px;
+  cursor: pointer;
+}
+
+/* .profile:hover .tooltip1{
+  opacity: 1;
+ 
+} */
+
+
+.profile{
+display: inline;
+position: relative;
+flex-direction: row;
+}
+
+
+
+/* .tooltip1{
+background-color: rgb(244, 244, 244);
+border-radius: 5px;
+position: absolute;
+display: none;
+align-items: center;
+width:245px;
+height: 70px;
+top:62px;
+opacity:0;
+column-gap: 14px;
+box-shadow: 1px 2px 2.5px rgba(0,0,0,0.3);
+pointer-events: none;
+transition: 0.5s;
+z-index: 30;
+} */
+
+.tooltip1 {
+  display: none; /* Hide the tooltip by default */
+  position: absolute; /* Position the tooltip */
+  align-items: center;
+  width:245px;
+  height: 70px;
+  top:62px;
+  background-color: #fff; /* Background color */
+  padding: 10px; /* Some padding */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow for effect */
+  z-index: 1; /* Stack above other elements */
+}
+
+.profile a:hover + .tooltip1 {
+  display: flex; /* Show the tooltip when hovering over the profile 0image*/
+  opacity: 1;
+} 
+
+.tooltip_img_div{
+  
+}
+
+.tooltip-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.tooltip-title{
+  font-family: Roboto,Arial;
+  font-size: 17.5px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+
+.tooltip-subs{
+  font-family: Roboto,Arial;
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+
+.tooltip-img{
+  /* display: flex; */
+  margin-top: 8px;
+  margin-bottom: 7px;
+  margin-left:10px;
+  width: 55px;
+  height: 55x;
+  border-radius:50px;
+  cursor: pointer;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 35px;
+}
+
